@@ -1,0 +1,110 @@
+/* app css stylesheet */
+html, body {
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+}
+
+h4 {
+  font-weight: 600;
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.margin-right-15 {
+  margin-right: 15px;
+}
+
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+#wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/main-bg-min.png");
+  justify-content: center;
+  align-items: center;
+}
+
+.socialitio-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  border: 1px solid #ca6908;
+  background-color: #ca6908;
+  transition: .2s;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.socialitio-btn.small {
+  padding: 8px 16px;
+}
+
+.socialitio-btn:hover {
+  background-color: #7f3804;
+  border-color: #7f3804;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.socialitio-btn.dark {
+  background-color: #0e0805;
+  color: #FFFFFF;
+  border-color: #7f3804;
+}
+
+.socialitio-btn.dark:hover {
+  background-color: #7f3804;
+}
+
+.modal-content {
+  padding: 60px;
+}
+
+.modal-content .modal-header,
+.modal-content .modal-body,
+.modal-content .modal-footer {
+  padding: 0;
+}
+
+.modal-body input[type="text"],
+.modal-body input[type="email"],
+.modal-body input[type="password"] {
+  padding: 8px 16px;
+  width: 88%;
+  margin-bottom: 15px;
+  outline-color: #ca6908;
+  font-size: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(202, 105, 8, .33);
+}
+
+@media (max-width: 767px) {
+
+  .socialitio-btn {
+    display: block;
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  .modal-body input[type="text"],
+  .modal-body input[type="email"],
+  .modal-body input[type="password"] {
+    width: 100%;
+  }
+
+  .sm-margin-bottom-15 {
+    margin-bottom: 15px;
+  }
+
+}

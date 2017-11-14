@@ -1,0 +1,15 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Sign up</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="signup" ng-submit="$ctrl.submit()">
+        <input type="email" name="email" placeholder="E-mail address" ng-model="email" required/>
+        <input type="text" name="firstName" placeholder="First name" ng-model="firstName" required/>
+        <input type="text" name="lastName" placeholder="Last name" ng-model="lastName" required/>
+        <input type="password" name="password" placeholder="Password" ng-model="password" required/>
+        <input type="password" class="margin-bottom-30" name="passwordRepeat" placeholder="Repeat password" ng-model="passwordRepeat" required/>
+
+        <button class="socialitio-btn small margin-right-15 sm-margin-bottom-15" type="submit">OK</button>
+        <button class="socialitio-btn small dark" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+    </form>
+</div>

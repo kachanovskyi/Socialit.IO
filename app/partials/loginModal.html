@@ -1,0 +1,11 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Login</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="login" ng-submit="$ctrl.submit()">
+        <input type="email" name="email" placeholder="E-mail address" ng-model="email" required/>
+        <input type="password" class="margin-bottom-30" name="password" placeholder="Password" ng-model="password" required/>
+        <button class="socialitio-btn small margin-right-15 sm-margin-bottom-15" type="submit">OK</button>
+        <button class="socialitio-btn small dark" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+    </form>
+</div>
