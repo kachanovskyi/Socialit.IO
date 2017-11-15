@@ -3,30 +3,23 @@
 var SocialitIO = angular.module('SocialitIO', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 
 SocialitIO
-    .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+    .config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/', {
-                redirectTo: function () {
-                    return "/dashboard";
-                }
+                templateUrl: 'pages/main.html',
+                controller: 'MainCtrl',
+                controllerAs: 'main'
             })
 
-            .when('/', {
+            .when('/welcome', {
                 templateUrl: 'pages/welcome.html',
                 controller: 'WelcomeCtrl',
                 controllerAs: 'welcome'
             })
 
-            // .when('/messages', {
-            //     templateUrl: 'pages/messages.html',
-            //     controller: 'MessagesCtrl',
-            //     controllerAs: 'messages'
-            // })
-
             .otherwise({
-                templateUrl: 'pages/404.html'
+                redirectTo: function () {
+                    return "/";
+                }
             });
-
-        $locationProvider.html5Mode(true);
-        $locationProvider.hasPrefix = '!';
     }]);

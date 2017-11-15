@@ -31,6 +31,10 @@ h4 {
   align-items: center;
 }
 
+#wrapper > .inner {
+  width: 100%;
+}
+
 .socialitio-btn {
   display: inline-block;
   padding: 14px 28px;

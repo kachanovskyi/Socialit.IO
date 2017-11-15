@@ -1,8 +1,6 @@
 SocialitIO.controller('SignupCtrl', ['$scope', '$uibModalInstance', '$uibModal', function ($scope, $uibModalInstance, $uibModal) {
     const vm = this;
 
-    localStorage.setItem('loginSocialitIO', 'kachanovskyi');
-
     vm.submit = function () {
 
         if( localStorage.getItem('emailSocialitIO') === $scope.email) {

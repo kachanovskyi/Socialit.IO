@@ -1,12 +1,13 @@
-SocialitIO.controller('LoginCtrl', ['$scope', '$uibModalInstance', function ($scope, $uibModalInstance) {
+SocialitIO.controller('LoginCtrl', ['$scope', '$uibModalInstance', '$location', function ($scope, $uibModalInstance, $location) {
     const vm = this;
     
     vm.submit = function () {
 
         if( (localStorage.getItem('emailSocialitIO') === $scope.email) && (localStorage.getItem('passwordSocialitIO') === $scope.password) ) {
 
-            alert('You\'re logged in!');
-            $uibModalInstance.close();
+            sessionStorage.setItem('ifLoggedSocialitIO', true);
+            // $uibModalInstance.close();
+            $location.path('/welcome');
 
         } else {
 

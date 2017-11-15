@@ -1,0 +1,52 @@
+.users {
+    padding: 0;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.user-pic {
+    width: 80px;
+    height: 80px;
+    margin: 12px 0;
+}
+
+.user-info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #777777;
+    margin-bottom: 0;
+    width: 100%;
+    word-break: break-all;
+}
+
+.user-status {
+    vertical-align: middle;
+    color: #999999;
+}
+
+.line-status {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid #ca6908;
+    margin-right: 4px;
+}
+.line-status.on {
+    background-color: #ca6908;
+}
+
+.follow {
+    margin-top: 12px;
+}

@@ -1,0 +1,6 @@
+.main-page {
+    background-color: rgba(256, 256, 256, .93);
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}

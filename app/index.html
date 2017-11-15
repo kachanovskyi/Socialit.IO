@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/users.css">
 
   <link rel="stylesheet" href="css/libraries/paraxify.css"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,700" rel="stylesheet">
@@ -33,9 +35,9 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <section id="wrapper" class="container-fluid paraxify">
-    <div class="col-xs-12">
-      <div ng-view="" class="col-xs-offset-1 col-xs-10"></div>
+  <section id="wrapper" class="container-fluid paraxify" ng-controller="MainCtrl">
+    <div class="inner row">
+      <div ng-view="" class="col-xs-12 col-md-offset-1 col-md-10"></div>
     </div>
   </section>
 
@@ -50,9 +52,13 @@
   <!--<script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>-->
   <script src="app.js"></script>
 
+  <script src="js/modules/controllers/mainCtrl.js"></script>
   <script src="js/modules/controllers/welcomeCtrl.js"></script>
   <script src="js/modules/controllers/loginCtrl.js"></script>
   <script src="js/modules/controllers/signupCtrl.js"></script>
+  <script src="js/modules/controllers/usersCtrl.js"></script>
+
+  <script src="js/modules/components/usersCmpt.js"></script>
 
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
