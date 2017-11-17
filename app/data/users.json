@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Richard Branson",
+    "status": true,
+    "img": "../images/branson.png",
+    "following": true
+  },
+  {
+    "id": 2,
+    "name": "Gabriel Macht",
+    "status": true,
+    "img": "../images/macht.jpg",
+    "following": true
+  },
+  {
+    "id": 3,
+    "name": "David Duchovny",
+    "status": false,
+    "img": "../images/duchovny.jpg",
+    "following": false
+  },
+  {
+    "id": 4,
+    "name": "Warren Buffett",
+    "status": false,
+    "img": "../images/buffett.jpg",
+    "following": false
+  },
+  {
+    "id": 5,
+    "name": "Elon Musk",
+    "status": true,
+    "img": "../images/musk.jpg",
+    "following": true
+  },
+  {
+    "id": 6,
+    "name": "Jeffrey Morgan",
+    "status": true,
+    "img": "../images/morgan.jpeg",
+    "following": true
+  },
+  {
+    "id": 7,
+    "name": "Chuck Norris",
+    "status": false,
+    "img": "../images/norris.jpg",
+    "following": false
+  },
+  {
+    "id": 8,
+    "name": "Hans Zimmer",
+    "status": true,
+    "img": "../images/zimmer.jpeg",
+    "following": false
+  },
+  {
+    "id": 9,
+    "name": "Chris Hemsworth",
+    "status": false,
+    "img": "../images/hemsworth.jpg",
+    "following": false
+  }
+]

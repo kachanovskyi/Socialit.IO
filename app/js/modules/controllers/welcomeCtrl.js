@@ -1,4 +1,4 @@
-SocialitIO.controller('WelcomeCtrl', ['$scope', '$uibModal', function ($scope, $uibModal) {
+SocialitIO.controller('WelcomeCtrl', ['$scope', '$uibModal', '$location', function ($scope, $uibModal, $location) {
     const vm = this;
 
     angular.element(document).ready(function () {

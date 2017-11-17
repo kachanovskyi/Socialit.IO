@@ -3,7 +3,7 @@
 var SocialitIO = angular.module('SocialitIO', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 
 SocialitIO
-    .config(['$routeProvider', function($routeProvider) {
+    .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'pages/main.html',
@@ -22,4 +22,7 @@ SocialitIO
                     return "/";
                 }
             });
+
+        $locationProvider.html5Mode(true);
+        $locationProvider.hasPrefix = '!';
     }]);

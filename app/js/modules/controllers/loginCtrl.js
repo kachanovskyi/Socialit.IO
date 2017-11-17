@@ -5,9 +5,10 @@ SocialitIO.controller('LoginCtrl', ['$scope', '$uibModalInstance', '$location', 
 
         if( (localStorage.getItem('emailSocialitIO') === $scope.email) && (localStorage.getItem('passwordSocialitIO') === $scope.password) ) {
 
-            sessionStorage.setItem('ifLoggedSocialitIO', true);
-            // $uibModalInstance.close();
-            $location.path('/welcome');
+            sessionStorage.setItem('ifLoggedSocialitIO', 1);
+
+            $location.path('/');
+            $uibModalInstance.close();
 
         } else {
 

@@ -1,5 +1,7 @@
 .users {
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .user {
@@ -12,12 +14,16 @@
     width: 80px;
     height: 80px;
     margin: 12px 0;
+    border-radius: 100%;
+    background: center no-repeat;
+    background-size: 100%;
 }
 
 .user-info {
     padding: 12px;
     display: flex;
     flex-direction: column;
+    width: calc(100% - 80px);
 }
 
 .user-name {
@@ -25,7 +31,7 @@
     color: #777777;
     margin-bottom: 0;
     width: 100%;
-    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .user-status {
@@ -40,13 +46,30 @@
     height: 12px;
     border-radius: 100px;
     background-color: transparent;
-    border: 1px solid #ca6908;
+    border: 2px solid #ca6908;
     margin-right: 4px;
 }
 .line-status.on {
     background-color: #ca6908;
 }
 
-.follow {
+.socialitio-btn.small.follow {
     margin-top: 12px;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+
+    .users {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .users-container {
+        display: flex;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
 }
