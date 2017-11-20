@@ -1,6 +1,21 @@
 <section class="main-page col-xs-12">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand">Socialit.IO</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="nav-btn-container">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="socialitio-btn small dark" ng-click="main.logOut()">Log out</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
     <users-component></users-component>
     <div class="content col-xs-12 col-sm-8 col-md-7">
-        <p class="title">Socialit.io</p>
+        <posts-component></posts-component>
     </div>
 </section>

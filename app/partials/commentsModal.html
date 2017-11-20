@@ -1,0 +1,16 @@
+<div class="modal-header">
+    <h3 class="modal-title">Comments</h3>
+    <button type="button" class="close" ng-click="$ctrl.cancel()">&times;</button>
+</div>
+<div class="modal-body">
+    <div class="add-comment">
+        <textarea id="newComment" placeholder="Enter your comment here..."></textarea>
+        <button class="socialitio-btn small dark publish" type="button" ng-click="$ctrl.addComment()">Publish</button>
+    </div>
+    <div class="comments">
+        <div class="comment" ng-repeat="comment in $ctrl.comments">
+            <p class="author">{{comment.name}}</p>
+            <p class="content">{{comment.content}}</p>
+        </div>
+    </div>
+</div>

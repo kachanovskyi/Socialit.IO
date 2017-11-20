@@ -1,0 +1,117 @@
+.posts {
+
+}
+
+.add-post {
+    text-align: right;
+}
+
+.post {
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    background: rgba(256, 256, 256, .55);
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0;
+    float: left;
+    width: 100%;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author .user-pic {
+    margin: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.post-interaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    /*margin-top: 10px;*/
+}
+
+.post .user-info {
+    padding: 0 12px;
+    width: 100%;
+}
+
+.socialitio-btn.publish {
+    width: auto;
+    margin: 6px 0;
+    display: inline-block;
+}
+
+.social-btn {
+    position: relative;
+}
+
+.social-btn i:hover {
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.social-btn.likes {
+    margin-right: 6px;
+}
+
+.social-btn i {
+    color: #0e0805;
+}
+
+.social-btn.likes.liked i {
+    color: red;
+}
+
+.social-btn.comments.commented i {
+    color: #ca6908;
+}
+
+.total-likes {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.total-likes i {
+    color: #ca6908;
+}
+
+.add-comment {
+    text-align: right;
+}
+
+.comment {
+    padding: 8px;
+}
+
+.comment p {
+    margin: 0;
+    color: #0e0805;
+}
+
+.comment .author {
+    display: block;
+    color: #ca6908;
+}
+
+.user-info .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 350px) {
+    .posts {
+        padding: 0;
+    }
+}

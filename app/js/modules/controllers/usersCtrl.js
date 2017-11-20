@@ -1,4 +1,4 @@
-SocialitIO.controller('UsersCtrl', ['$scope', '$location', '$http', function ($scope, $location, $http) {
+SocialitIO.controller('UsersCtrl', ['$scope', '$location', '$http', 'usersFctr', function ($scope, $location, $http, usersFctr) {
     const vm = this;
 
     vm.onlineOnly = false;
@@ -9,6 +9,8 @@ SocialitIO.controller('UsersCtrl', ['$scope', '$location', '$http', function ($s
         for (let x in response.data) {
             vm.users.push(response.data[x]);
         }
+
+        usersFctr.users = [...vm.users];
 
     }, function (error) {
         console.log(error);

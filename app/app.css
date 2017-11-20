@@ -13,6 +13,18 @@ h4 {
   font-size: 22px;
 }
 
+textarea {
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding: 10px 40px 30px 20px;
+  font-size: 14px;
+  line-height: 1;
+  resize: none;
+  outline-color: #ca6908;
+}
+
 .margin-right-15 {
   margin-right: 15px;
 }
@@ -39,8 +51,8 @@ h4 {
   display: inline-block;
   padding: 14px 28px;
   border-radius: 2px;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   color: #ffffff;
   border: 1px solid #ca6908;
   background-color: #ca6908;
@@ -71,6 +83,14 @@ h4 {
   background-color: #7f3804;
 }
 
+.modal-header .close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 26px;
+  outline: none;
+}
+
 .modal-content {
   padding: 60px;
 }
@@ -99,7 +119,6 @@ h4 {
     display: block;
     width: 88%;
     margin: 0 auto;
-    font-size: 14px;
   }
 
   .modal-body input[type="text"],

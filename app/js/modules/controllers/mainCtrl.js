@@ -5,4 +5,10 @@ SocialitIO.controller('MainCtrl', ['$scope', '$uibModal', '$location', function 
         $location.path('welcome');
     }
 
+    vm.logOut = function () {
+        sessionStorage.setItem('ifLoggedSocialitIO', 0);
+
+        $location.path('/welcome');
+    };
+
 }]);

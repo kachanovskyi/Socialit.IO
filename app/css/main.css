@@ -6,6 +6,44 @@
     padding-top: 15px;
 }
 
-.main-page .content {
+.navbar-default.navbar {
+    margin-bottom: 12px;
+}
 
+.navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar-default .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover {
+    color: #ca6908;
+}
+
+
+.nav-btn-container {
+    margin-left: auto;
+}
+
+.navbar-default .navbar-nav>li>.socialitio-btn {
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>li>.socialitio-btn:hover {
+    background-color: #7f3804;
+    color: #FFFFFF;
+}
+
+@media (max-width: 350px) {
+    .main-page .content {
+        padding: 0;
+    }
 }

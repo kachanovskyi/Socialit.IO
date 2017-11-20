@@ -2,6 +2,7 @@
     padding: 0;
     overflow-x: hidden;
     overflow-y: scroll;
+    max-height: calc(100%);
 }
 
 .user {
@@ -56,6 +57,18 @@
 .socialitio-btn.small.follow {
     margin-top: 12px;
     padding: 0;
+}
+
+@media (min-width: 1199px) {
+    .users .socialitio-btn {
+        width: 70%;
+    }
+}
+
+@media (max-width: 991px) {
+    .users .socialitio-btn {
+        width: 72%;
+    }
 }
 
 @media (max-width: 767px) {
